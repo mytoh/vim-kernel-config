@@ -1231,6 +1231,8 @@ syntax keyword kernelOptions
 syntax keyword kernelOptions
       \ BROOKTREE_ALLOC_PAGES MAXFILES
 
+syntax keyword kernelOptions
+      \ WITH_CTF
 " }}}
 
 " device options from NOTES {{{
@@ -1279,6 +1281,11 @@ syntax keyword kernelDevices
       \ vge cs ed ath_pci ipw iwi iwn wpi
 
 " }}}
+
+" VirtIO support
+syntax keyword kernelDevices
+      \ virtio virtio_pci vtnet
+      \ virtio_blk virtio_scsi virtio_balloon
 
 
 
